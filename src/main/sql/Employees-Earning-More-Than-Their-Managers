@@ -1,0 +1,6 @@
+select e.Name  from Employee e where e.salary >
+(select e1.salary from  Employee e1 where e.ManagerId  = e1.Id);
+
+
+SELECT e.Name FROM Employee e LEFT JOIN Employee e1
+ON e.ManagerId = e1.Id WHERE e.Salary > e1.Salary
