@@ -1,0 +1,12 @@
+SELECT c.Name from Customers c
+LEFT JOIN Orders o on  c.Id = o.CustomerId
+WHERE o.CustomerId is NULL;
+
+## more efficiency
+
+SELECT c.Name from Customers c
+WHERE NOT EXISTS (SELECT 1 FROM Orders o WHERE c.Id = o.CustomerId);
+
+select c.Name from  Customers c where c.id not in (select o.CustomerId from Orders o );
+
+
