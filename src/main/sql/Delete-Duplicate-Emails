@@ -1,0 +1,4 @@
+delete from Person where id not in (select id from (select Min(id) as id from Person group by Email) as al);
+
+-------------------------------------------
+http://stackoverflow.com/questions/45494/mysql-error-1093-cant-specify-target-table-for-update-in-from-clause
