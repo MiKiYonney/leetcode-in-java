@@ -9,4 +9,8 @@ public class ExcelSheetColumnNumber {
         }
         return colNumber;
     }
+
+    public static void main(String[] args) {
+        new ExcelSheetColumnNumber().titleToNumber("AA");
+    }
 }
