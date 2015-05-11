@@ -1,3 +1,5 @@
+package com.leetcode;
+
 /**
  * Created by yonney.yang on 2015/4/1.
  */
