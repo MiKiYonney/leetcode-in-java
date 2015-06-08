@@ -3,7 +3,7 @@ package com.algorithms;
 /**
  * Created by yonney.yang on 2015/5/11.
  */
-public class baseAlgorithms {
+public class BaseAlgorithms {
     //素数
     public static boolean isPrime(int n) {
         if (n < 2) return false;
@@ -22,5 +22,11 @@ public class baseAlgorithms {
             t = (c / t + t) / 2.0;
         }
         return t;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(1/0);
+        System.out.println(1.0/0.0);
+        System.out.println(Double.POSITIVE_INFINITY);
     }
 }
