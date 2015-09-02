@@ -1,5 +1,8 @@
 package com.algorithms;
 
+import java.awt.geom.Point2D;
+import java.util.Stack;
+
 /**
  * Created by yonney.yang on 2015/5/11.
  */
@@ -28,5 +31,8 @@ public class BaseAlgorithms {
         System.out.println(1/0);
         System.out.println(1.0/0.0);
         System.out.println(Double.POSITIVE_INFINITY);
+        Point2D point2D;
+        Stack stack;
+
     }
 }
